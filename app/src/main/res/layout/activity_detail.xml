@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A47C48"
+    tools:context=".DetailActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/top_nav"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:id="@+id/btn_back"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu Kopi Panas"
+            android:paddingLeft="70dp"
+            android:textColor="#252525"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/kotak_Detail"
+        android:layout_width="match_parent"
+        android:layout_height="658dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/kotak_detail">
+
+        <ImageView
+            android:id="@+id/img_kopi_blitar"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/kpsmg_dtl" />
+
+        <TextView
+            android:id="@+id/judul_detail"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_kopi_blitar"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:lines="2"
+            android:textColor="#252525"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/dtl_desc"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/judul_detail"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:textColor="#414141"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/txt_ukrm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dtl_desc"
+            android:paddingLeft="75dp"
+            android:paddingTop="15dp"
+            android:text="Ukuran Minuman"
+            android:textColor="#252525"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_ukrm"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/pilih_ukuran"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btn_select_kecil"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/btn_kecil" />
+
+            <ImageView
+                android:id="@+id/btn_select_sedang"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/btnsdg" />
+
+            <ImageView
+                android:id="@+id/btn_select_besar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/btnbsr"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pilih_ukuran"
+            android:text="Total Harga"
+            android:textSize="20sp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#252525"
+            android:id="@+id/txt_infhrg"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_infhrg"
+            android:id="@+id/tv_harga"
+            android:layout_marginLeft="75dp"/>
+
+        <ImageView
+            android:layout_width="335dp"
+            android:layout_height="62dp"
+            android:src="@drawable/sldtac"
+            android:layout_below="@+id/tv_harga"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

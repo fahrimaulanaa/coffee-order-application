@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tv_minuman" type="id" />
+    <item name="section_kategori2" type="id" />
+    <item name="section_kategori4" type="id" />
+    <item name="section_kategori5" type="id" />
+    <item name="rv_menu" type="id" />
+</resources>

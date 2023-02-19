@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="20dp"
+    android:paddingLeft="16dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_item_photo"
+        android:layout_width="157dp"
+        android:layout_height="189dp"
+        android:layout_margin="1dp"
+        tools:src="@color/black" />
+
+</RelativeLayout>

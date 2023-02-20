@@ -230,7 +230,7 @@
             android:drawableLeft="@drawable/btn4"
             android:text="Best Seller"
             android:textSize="10sp"
-            android:textColor="#252525"
+            android:textColor="@color/text_color"
             android:background="@android:color/transparent"
             android:layout_marginLeft="50dp"
             android:foreground="@drawable/button_outline"/>
@@ -242,9 +242,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/section_kategori5"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="-19dp"
         android:background="@android:color/white"
-        android:paddingTop="10dp"
         app:menu="@menu/menu_bottom" />
 </RelativeLayout>
